@@ -1,5 +1,9 @@
 readme.md
 
+
+curl -X GET "http://localhost:8080/diary"
+curl -X POST -H "Content-Type:application/json" -d "[{\"id\":0, \"comment\":\"うへえええええてすと\", \"createDatetime\": \"2023-06-03T22:10:38\"}]" http://localhost:8080/diary
+
 ***
 
 ## 参考にしたサイト
