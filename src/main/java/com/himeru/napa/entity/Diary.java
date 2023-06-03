@@ -9,11 +9,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
-@NoArgsConstructor
+
+
 @AllArgsConstructor
 @Entity
 //@Table(name = "diaries")	//指定しないとテーブルはクラス名と同じdiary
@@ -24,4 +23,29 @@ public class Diary {
     private String comment;
     @Column(name = "create_datetime", nullable = false)
     private LocalDateTime createDatetime;
+    
+    
+    
+    public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	
+    
+    public String getComment() {
+		return comment;
+	}
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+	
+    
+    public LocalDateTime getCreateDatetime() {
+		return createDatetime;
+	}
+	public void setCreateDatetime(LocalDateTime createDatetime) {
+		this.createDatetime = createDatetime;
+	}
 }
