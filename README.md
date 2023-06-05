@@ -1,9 +1,12 @@
 readme.md
 
 
-curl -X GET "http://localhost:8080/diary" | python -m json.tool
+curl -X GET -H "Content-Type:application/json; charset=utf-8" "http://localhost:8080/diary" | python -m json.tool
 
-curl -X POST -H "Content-Type:application/json" -d "[{\"id\":0, \"comment\":\"うへえええええてすと\", \"createDatetime\": \"2023-06-03T22:10:38\"}]" http://localhost:8080/diary　| python -m json.tool
+curl -X POST -H "Content-Type:application/json" -d "[{\"id\":0, \"comment\":\"うへえええええてすと\", \"createDatetime\": \"2023-06-03T22:10:38\"}]" http://localhost:8080/diary | python -m json.tool
+
+
+curl -X PUT -H "Content-Type:application/json" -d "{\"id\":2, \"comment\":\"ぐえええぐぐぐ\", \"createDatetime\": \"2023-06-03T22:10:38\"}" http://localhost:8080/diary
 
 ***
 
