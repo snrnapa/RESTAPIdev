@@ -12,10 +12,10 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 
-
-@AllArgsConstructor
-@Entity
+ubuntuではlombokが動かなかったため、以下のgetter,setterと競合しなかったが、windowsでは、lombokが動くため、競合してエラーとなっていた。
+// @AllArgsConstructor
 //@Table(name = "diaries")	//指定しないとテーブルはクラス名と同じdiary
+@Entity
 public class Diary {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
