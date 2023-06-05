@@ -8,11 +8,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 
 
-ubuntuではlombokが動かなかったため、以下のgetter,setterと競合しなかったが、windowsでは、lombokが動くため、競合してエラーとなっていた。
+//ubuntuではlombokが動かなかったため、以下のgetter,setterと競合しなかったが、windowsでは、lombokが動くため、競合してエラーとなっていた。
 // @AllArgsConstructor
 //@Table(name = "diaries")	//指定しないとテーブルはクラス名と同じdiary
 @Entity
